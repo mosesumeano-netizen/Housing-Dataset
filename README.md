@@ -1,80 +1,137 @@
+Housing Price Analysis (Excel-Based)
 
-Copy code
-Markdown
-# House Price Data Analysis
+This project analyzes factors that influence housing prices using Microsoft Excel. Statistical techniques such as 
+descriptive statistics, correlation analysis, and multiple regression were applied.
 
-## Project Overview
-This project analyzes factors that influence housing prices using a real-world housing dataset.  
-The objective is to identify key property features that significantly affect house prices and to present insights through clear analysis and dashboards.
+📂 Dataset Overview
 
----
+Source: Kaggle Housing Dataset
 
-## Dataset Description
-- Source: Kaggle Housing Dataset  
-- Records: 546 houses  
-- Variables: 13 features including price, land area, number of bedrooms, bathrooms, stories, and amenities  
+Rows: 546
 
-The dataset contains both numerical and categorical variables describing housing characteristics across different neighborhoods.
+Columns: 13
 
----
+Target Variable: Price
 
-## Tools Used
-- Microsoft Excel – data cleaning, transformation, and exploratory analysis  
-- Power BI –  dashboards and visualizations  
+Key Variables
 
----
+Numerical: Area, Bedrooms, Bathrooms, Stories, Parking
 
-## Methodology
-1. **Data Import & Cleaning**
-   - Imported CSV data into Excel
-   - Checked for missing values and inconsistencies
-   - Converted Yes/No variables into binary (1/0) format
+Categorical (Yes/No):
+MainRoad, GuestRoom, Basement, Hot Water Heating,
+AirConditioning, Preferred Area, Furnishing Status
 
-2. **Feature Engineering**
-   - Created price per square foot
-   - Categorized land size into Small, Medium, and Large
-   - Generated helper columns for analysis and visualization
+🧹 Data Preparation in Excel
+Convert Yes/No to Binary (1/0)
 
-3. **Exploratory Data Analysis**
-   - Summary statistics
-   - Correlation analysis
-   - Visual comparison of house price against key variables
+Excel formula used:
 
-4. **Modeling (Optional)**
-   - Linear and multiple regression analysis to assess the impact of housing features on price
+=IF(A2="Yes",1,0)
 
----
 
-## Key Insights
-- Land area shows a positive relationship with house price  
-- Houses with more bedrooms and bathrooms generally command higher prices  
-- Amenities such as air conditioning and preferred location significantly increase house value  
-- Furnishing status impacts price, with fully furnished houses priced higher on average  
+This conversion allows categorical variables to be used in:
 
----
+Correlation analysis
 
-## Visualizations
-- Average house price by number of bedrooms  
-- Average house price by number of bathrooms  
-- Price comparison by furnishing status  
-- Interactive Power BI dashboard with for user exploration  
+Regression modeling
 
----
+📈 Descriptive Statistics
 
-## Conclusion
-The analysis confirms that both physical attributes and amenities play an important role in determining housing prices.  
-This project demonstrates the use of Excel and Power BI to transform raw housing data into actionable insights.
+Excel functions used:
 
----
+=AVERAGE(range)
+=MIN(range)
+=MAX(range)
+=STDEV.P(range)
 
-## Future Improvements
-- Incorporate additional datasets, incluse physical size of rooms and living spaces, compare land price in choice neighbourhood
--  such as location or economic indicators  
-- Apply advanced regression or machine learning models  
-- Enhance dashboard interactivity and design  
+Summary Highlights
 
----
+Average house price ≈ 4.77 million
 
-## Author
-Moses Umeano  
-Data Analysis Student | Excel & Power BI
+Average land size ≈ 5,151 sq ft
+
+Most houses have 3 bedrooms, 1–2 bathrooms, and 2 stories
+
+🔗 Correlation Analysis
+
+Excel formula:
+
+=CORREL(price_range, variable_range)
+
+Binary Variables vs Price
+Variable	Correlation
+Air Conditioning	0.453
+Preferred Area	0.330
+Main Road	0.297
+Guest Room	0.256
+Basement	0.187
+Hot Water Heating	0.093
+
+Insight: Comfort and location-related features show stronger relationships with house price.
+
+Numerical Variables vs Price
+Variable	Correlation
+Area (sq ft)	0.536
+Bathrooms	0.518
+Stories	0.421
+Parking	0.384
+Bedrooms	0.366
+
+Insight: Property size and number of bathrooms influence price more than bedroom count.
+
+📉 Multiple Regression Analysis
+
+Regression was performed using:
+
+Data → Data Analysis → Regression
+
+Model Statistics
+
+R²: 0.682
+
+Adjusted R²: 0.674
+
+F-statistic: 87.52
+
+Significance F: 9.07E-123
+
+✅ The model explains 68% of the variation in housing prices.
+
+Significant Predictors (p < 0.05)
+Variable	Impact on Price
+Area (sq ft)	+244 per sq ft
+Bathrooms	+987,668
+Air Conditioning	+864,958
+Hot Water Heating	+855,447
+Preferred Area	+651,544
+Stories	+450,848
+Fully Furnished	+411,234
+Parking	+277,107
+Not Significant
+
+Bedrooms (p = 0.114)
+→ Not a strong predictor when other variables are considered.
+ Likely due to area of rooms and living spaces not given in the dataset
+🧠 Key Findings
+
+House prices are driven mainly by land size, bathrooms, location, and amenities
+
+Binary variables, when properly encoded, add meaningful insights
+
+Excel is sufficient for robust housing price analysis
+
+🛠 Tools Used
+
+Microsoft Excel (Data Cleaning, Correlation, Regression)
+
+Power BI (Visualization – optional)
+
+GitHub (Project Documentation)
+
+📌 Conclusion
+
+This project demonstrates how Excel-based statistical analysis can effectively identify the key drivers of
+housing prices, making it suitable for academic work and data analytics portfolios.
+
+
+
