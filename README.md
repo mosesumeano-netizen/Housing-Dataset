@@ -133,5 +133,12 @@ GitHub (Project Documentation)
 This project demonstrates how Excel-based statistical analysis can effectively identify the key drivers of
 housing prices, making it suitable for academic work and data analytics portfolios.
 
+Recommendation
+
+Dataset to include details about size of houses, not just land size. The area of rooms available for internal
+living spaces, and other external variables to include cost of financing. Location of land to be categoried
+as to compare land in choice area and the houses there
+
+
 
 
