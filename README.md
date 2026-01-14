@@ -2,8 +2,8 @@
 
 ![Image](https://github.com/user-attachments/assets/aee5cb62-afbe-45f5-9e28-6afc4ba09721)
 
-Md                           copy code
-##    Power BI
+Md                           
+##  
 ![Power BI](power bi_dashboard.png)
 
 This project analyzes factors that influence housing prices using Microsoft Excel. Statistical techniques such as 
