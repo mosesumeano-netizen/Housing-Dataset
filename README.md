@@ -2,6 +2,10 @@
 
 ![Image](https://github.com/user-attachments/assets/aee5cb62-afbe-45f5-9e28-6afc4ba09721)
 
+Md
+##    Power BI
+!{Power BI}
+(power bi_dashboard.png)
 This project analyzes factors that influence housing prices using Microsoft Excel. Statistical techniques such as 
 descriptive statistics, correlation analysis, and multiple regression were applied.
 
@@ -140,7 +144,7 @@ housing prices, making it suitable for academic work and data analytics portfoli
 Dataset to include details about size of houses, not just land size. The area of rooms available for internal
 living spaces, and other external variables to include cost of financing. Location of land to be categoried
 as to compare land in choice area and the houses there
-
+Added Power BI dashboard image
 
 
 
