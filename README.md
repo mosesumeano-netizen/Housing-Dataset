@@ -4,7 +4,7 @@
 
                       
 ##  
-![Power BI](images/Powerbi_dashboard.png)
+![Power BI.png](powerbi_png)
 
 This project analyzes factors that influence housing prices using Microsoft Excel. 
 Statistical techniques such as 
