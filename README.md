@@ -2,11 +2,12 @@
 
 ![Image](https://github.com/user-attachments/assets/aee5cb62-afbe-45f5-9e28-6afc4ba09721)
 
-                          
+                      
 ##  
 ![Power BI](images/Powerbi_dashboard.png)
 
-This project analyzes factors that influence housing prices using Microsoft Excel. Statistical techniques such as 
+This project analyzes factors that influence housing prices using Microsoft Excel. 
+Statistical techniques such as 
 descriptive statistics, correlation analysis, and multiple regression were applied.
 
 ## Dataset Overview
